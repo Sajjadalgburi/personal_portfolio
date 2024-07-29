@@ -3,9 +3,12 @@ import { FlipWords } from "./ui/flip-words";
 
 const Hero = () => {
   const words = [
-    `software ${"  "} engnieer`,
-    "Fullstack \ndeveloper",
-    "software \ndeveloper",
+    "software engineer",
+    "fullstack developer",
+    "software developer",
+    "backend developer",
+    "frontend developer",
+    "web developer",
   ];
 
   return (
