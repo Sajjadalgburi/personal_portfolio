@@ -74,7 +74,7 @@ export const FlipWords = ({
             }}
             className="inline-block"
           >
-            <span className="purple_gradient"> {letter}</span>
+            <span className="gradient_color"> {letter}</span>
           </motion.span>
         ))}
       </motion.div>
