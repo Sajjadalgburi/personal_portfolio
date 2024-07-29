@@ -88,6 +88,13 @@
   }
 }
 
+.purple_gradient {
+  background: #ff56c5;
+  background: linear-gradient(to right, #ff56c5 0%, #5e43d9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .sub_header {
   @apply text-sm font-semibold text-center;
 }
