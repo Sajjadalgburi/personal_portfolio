@@ -88,9 +88,13 @@
   }
 }
 
-.purple_gradient {
-  background: #ff56c5;
-  background: linear-gradient(to right, #ff56c5 0%, #5e43d9 100%);
+.gradient_color {
+  background: #d6d6d6;
+  background: radial-gradient(
+    ellipse farthest-corner at center center,
+    #d6d6d6 23%,
+    #000000 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
