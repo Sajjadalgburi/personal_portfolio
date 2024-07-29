@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 export const FlipWords = ({
   words,
-  duration = 3000,
+  duration = 2000,
   className,
 }: {
   words: string[];
@@ -52,9 +52,9 @@ export const FlipWords = ({
         exit={{
           opacity: 0,
           y: -40,
-          x: 40,
+          x: 0,
           filter: "blur(8px)",
-          scale: 2,
+          scale: 1,
           position: "absolute",
         }}
         className={cn(
@@ -63,7 +63,7 @@ export const FlipWords = ({
         )}
         key={currentWord}
       >
-        {currentWord.split("").map((letter, index) => (
+        {currentWord.split("  ").map((letter, index) => (
           <motion.span
             key={currentWord + index}
             initial={{ opacity: 0, y: 10, filter: "blur(8px)" }}
@@ -74,7 +74,7 @@ export const FlipWords = ({
             }}
             className="inline-block"
           >
-            {letter}
+            <span className="purple_gradient"> {letter}</span>
           </motion.span>
         ))}
       </motion.div>
