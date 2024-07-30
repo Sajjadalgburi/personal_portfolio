@@ -116,5 +116,5 @@
 }
 
 .card_para {
-  @apply text-sm;
+  @apply text-sm capitalize;
 }
