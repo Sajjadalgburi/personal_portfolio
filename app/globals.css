@@ -108,7 +108,7 @@
 }
 
 .hero_header {
-  @apply text-5xl text-center font-extrabold;
+  @apply text-3xl md:text-5xl text-center font-extrabold;
 }
 
 .flex-center {
