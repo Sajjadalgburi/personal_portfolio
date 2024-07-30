@@ -103,6 +103,10 @@
   @apply text-sm font-semibold text-center;
 }
 
+.body_header {
+  @apply text-3xl capitalize text-center font-extrabold md:text-5xl;
+}
+
 .hero_header {
   @apply text-5xl text-center font-extrabold;
 }
