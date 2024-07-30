@@ -18,7 +18,14 @@ const MyExperiance = () => {
             <PinContainer title="visit" href={project.link || "/"}>
               <div className="flex flex-col p-2 tracking-tight text-slate-100/50 sm:basis-1/2 w-[30rem] h-[30rem] ">
                 {/* Bg image */}
-                <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
+
+                {/* <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" /> */}
+
+                <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
+                  <div className="relative w-full h-full overflow-hidden rounded-3xl opacity-40 transition-all hover:opacity-90">
+                    <img alt="Project Image" src={project.img} />
+                  </div>
+                </div>
 
                 {/* rest of the card content */}
                 <div className="my-2 flex justify-between ">
