@@ -3,19 +3,12 @@ import { FlipWords } from "./ui/flip-words";
 import { HoverBorderGradient } from "./ui/hover-border-gradient";
 
 const Hero = () => {
-  const words = [
-    "software engineer",
-    "fullstack developer",
-    "software developer",
-    "backend developer",
-    "frontend developer",
-    "web developer",
-  ];
+  const words = ["software engineer", "fullstack developer"];
 
   return (
     <section className="pb-20 pt-36">
       <div>
-        <Spotlight className=" -top-40 -left-10 md:-left-32 md:-top-20 h-screen" />
+        <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen" />
         <Spotlight className="top-10 left-full h-[80vh] w-[50vw]" />
         <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" />
       </div>
@@ -32,11 +25,12 @@ const Hero = () => {
 
           <div className=" my-5">
             <h1 className="hero_header capitalize">
-              Hey I am Sajjad algburi, a <br /> <FlipWords words={words} />{" "}
-              loacted in the GTA area, canada
+              Hey I am Sajjad algburi, a <br /> <FlipWords words={words} />
+              <br />
+              loacted in canada
             </h1>
           </div>
-          <p className=" text-center text-sm">
+          <p className="text-center text-sm leading-relaxed text-blue-100">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni earum
             quos eum neque libero qui vero numquam illum odit. Veritatis
             mollitia praesentium provident reprehenderit nam possimus quam
@@ -47,6 +41,14 @@ const Hero = () => {
             <HoverBorderGradient>Learn More</HoverBorderGradient>
           </a>
         </div>
+      </div>
+
+      <div className="relative flex justify-end">
+        <a href="#about">
+          <p className="text-[4px] sm:text-[8px] uppercase text-blue-100">
+            Scroll Down ↓
+          </p>
+        </a>
       </div>
     </section>
   );
