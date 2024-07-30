@@ -73,8 +73,8 @@ export const projects = [
   {
     id: 1,
     title: "Interlade",
-    des: "Stop Using Paper Bills of Lading!",
-    img: "/p1.svg",
+    des: "Revolutionize the modern world and eliminate the need for paper Bills of Lading with Interlade!",
+    img: "/t.jpg",
     role: "Software Engineer",
     iconLists: ["/flutter.svg", "/android.svg", "/graphql.svg", "/aws.svg"],
     link: "https://www.interlade.com/",
@@ -82,8 +82,8 @@ export const projects = [
   {
     id: 2,
     title: "Shad's Barbershop",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
+    des: "At Shad's Barbershop, we believe every haircut is a masterpiece. Our skilled barbers combine artistry with precision to craft the perfect look just for you.",
+    img: "/photo.jpg",
     role: "Front-End Dev",
     iconLists: [
       "/re.svg",
@@ -97,8 +97,8 @@ export const projects = [
   {
     id: 3,
     title: "BNO Stucco",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
+    des: "Brothers Exterior stands as a cherished privately owned family business, passionately dedicated to delivering unparalleled house stucco services across the Greater Toronto Area (GTA).",
+    img: "/BNO.jpg",
     role: "Full-Stack Dev",
     iconLists: ["/re.svg", "/tail.svg", "/js.svg", "/aws.svg", "/mongodb.svg"],
     link: "https://www.bnostucco.com/",
