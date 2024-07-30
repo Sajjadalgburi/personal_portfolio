@@ -1,11 +1,36 @@
-const About = () => {
+import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
+import { gridItems } from "@/data";
+
+export function About() {
   return (
-    <section className=" text-4xl  min-h-screen mt-20   bg-white/10 py-20 backdrop-blur">
-      <div className="flex">
-        <h1>About</h1>
-      </div>
+    <section id="about" className=" min-h-screen">
+      {" "}
+      <BentoGrid className="max-w-6xl mx-auto">
+        {gridItems.map(
+          ({
+            id,
+            title,
+            description,
+            className,
+            imgClassName,
+            titleClassName,
+            img,
+            spareImg,
+          }) => (
+            <BentoGridItem
+              id={id}
+              key={id}
+              title={title}
+              description={description}
+              className={className}
+              img={img}
+              imgClassName={imgClassName}
+              titleClassName={titleClassName}
+              spareImg={spareImg}
+            />
+          )
+        )}
+      </BentoGrid>
     </section>
   );
-};
-
-export default About;
+}
