@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
 import { About } from "@/components/About";
+import MyExperiance from "@/components/MyExperiance";
 
 export default function Home() {
   return (
@@ -11,6 +12,8 @@ export default function Home() {
         <Hero />
         {/* $ */}
         <About />
+        {/* $ */}
+        <MyExperiance />
       </div>
     </main>
   );
