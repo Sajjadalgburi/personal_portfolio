@@ -26,11 +26,10 @@ const Hero = () => {
           <div className="my-5">
             <h1 className="hero_header capitalize">
               Hey, I am Sajjad Algburi, a <br /> <FlipWords words={words} />
-              <br />
               located in Canada
             </h1>
           </div>
-          <p className="text-center text-sm leading-relaxed text-blue-100">
+          <p className="text-center text-[.7rem] sm:text-[1.2rem] leading-relaxed text-blue-100">
             I craft dynamic and responsive websites using modern web
             technologies to deliver seamless digital experiences.
           </p>
