@@ -3,7 +3,7 @@ import { gridItems } from "@/data";
 
 export function About() {
   return (
-    <section id="about" className="min-h-screen mt-[10rem]">
+    <section id="about" className="py-20 mt-20 relative">
       {" "}
       <BentoGrid className="max-w-6xl mx-auto">
         {gridItems.map(
