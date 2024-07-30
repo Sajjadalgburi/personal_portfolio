@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const MyExperiance = () => {
   return (
-    <section id="experiance" className="mt-10">
+    <section id="experiance" className="mt-10 py-10">
       <h1 className="body_header">
         My work <span className="gradient_color">Experiance</span>
       </h1>
