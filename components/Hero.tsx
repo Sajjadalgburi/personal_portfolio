@@ -23,18 +23,16 @@ const Hero = () => {
             Dynamic Web Magic with Next.js
           </p>
 
-          <div className=" my-5">
+          <div className="my-5">
             <h1 className="hero_header capitalize">
-              Hey I am Sajjad algburi, a <br /> <FlipWords words={words} />
+              Hey, I am Sajjad Algburi, a <br /> <FlipWords words={words} />
               <br />
-              loacted in canada
+              located in Canada
             </h1>
           </div>
           <p className="text-center text-sm leading-relaxed text-blue-100">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni earum
-            quos eum neque libero qui vero numquam illum odit. Veritatis
-            mollitia praesentium provident reprehenderit nam possimus quam
-            officia adipisci temporibus!
+            I craft dynamic and responsive websites using modern web
+            technologies to deliver seamless digital experiences.
           </p>
 
           <a href="#about" className="mt-10">
@@ -44,7 +42,7 @@ const Hero = () => {
       </div>
 
       <div className="relative flex justify-end">
-        <a href="#about">
+        <a href="#experiance">
           <p className="text-[4px] sm:text-[8px] uppercase text-blue-100">
             Scroll Down ↓
           </p>
