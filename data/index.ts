@@ -107,34 +107,25 @@ export const projects = [
 
 export const testimonials = [
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    id: 1,
+    text: "Sajjad is truly a talented and hardworking engineer. I've spent time mentoring him and there was never a single task or concept he even so much as hesitated to figure out. He would be a great asset to any engineering team.",
+    name: "Bashiri Smith",
+    link: "https://www.linkedin.com/in/bashiri-smith/",
+    title: "Software Engineer",
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    id: 2,
+    text: "I am incredibly grateful to Sajjad for the fantastic website he created for my company. He was always very polite and accommodating whenever I requested new features. He even went the extra mile by paying for my domain!",
+    name: "Ali Mhaidi",
+    link: "https://www.instagram.com/brothers_exterior_stucco/",
+    title: "Client",
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    id: 3,
+    text: "I appreciate Sajjad Alguir's help and craftsmanship! With the help of his website, I was able to acquire additional customers, many of whom returned because of the custom booking platform he created for me, all at no extra cost!",
+    name: "Habeed Shad",
+    link: "https://www.instagram.com/habeeb.afzal_/",
+    title: "Client",
   },
 ];
 
