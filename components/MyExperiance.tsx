@@ -8,8 +8,10 @@ const MyExperiance = () => {
       <h1 className="body_header">
         My work <span className="gradient_color">Experiance</span>
       </h1>
-
-      <div className="flex-wrap flex items-center justify-center gap-y-2 gap-x-10">
+      <h2 className="absolute text-[11rem] left-[32%] top-[40%] opacity-[0.08] font-extrabold bg-zinc-600 text-center p-3 capitalize ">
+        &quot;Experiance&quot;
+      </h2>
+      <div className="flex-wrap flex items-center justify-center gap-y-2 gap-x-10 relative">
         {projects.map((project) => (
           <div
             key={project.id}

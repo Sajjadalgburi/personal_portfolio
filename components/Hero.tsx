@@ -47,6 +47,9 @@ const Hero = () => {
           </p>
         </a>
       </div>
+      <h3 className="absolute text-[7rem] left-[73%] top-[12%] opacity-[0.05] font-extrabold  text-center p-3 capitalize ">
+        &quot;Scroll&quot;
+      </h3>
     </section>
   );
 };
