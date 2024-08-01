@@ -9,20 +9,23 @@
     "lint": "next lint --max-warnings 0"
   },
   "dependencies": {
+    "@react-three/fiber": "^8.16.8",
     "clsx": "^2.1.1",
-    "framer-motion": "^11.3.19",
+    "framer-motion": "^11.3.21",
     "mini-svg-data-uri": "^1.4.4",
     "next": "14.2.5",
     "next-themes": "^0.3.0",
     "react": "^18",
     "react-dom": "^18",
     "tailwind-merge": "^2.4.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "three": "^0.167.1"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/three": "^0.167.1",
     "eslint": "^8.57.0",
     "eslint-config-next": "14.2.5",
     "eslint-plugin-react": "^7.35.0",
