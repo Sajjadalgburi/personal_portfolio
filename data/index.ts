@@ -1,8 +1,34 @@
 export const navItems = [
   { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
+  { name: "Experiance", link: "#experiance" },
+  {
+    name: "Resume",
+    link: "https://docs.google.com/document/d/18ySfM4Db26B9PCVPvKZI5ISMoRCcCt7BLqKDb1_F9HY/edit?usp=sharing",
+    target: "_blank",
+  },
   { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
+];
+
+export const socials = [
+  {
+    id: 1,
+    logo: "./insta.svg",
+    href: "https://www.instagram.com/sajjadalgburi/",
+    alt: "Instagram link logo",
+  },
+  {
+    id: 2,
+    logo: "./github.svg",
+    href: "https://github.com/Sajjadalgburi",
+    alt: "GitHub link logo",
+  },
+  {
+    id: 3,
+    logo: "./link.svg",
+    href: "https://www.linkedin.com/in/sajjadalgburi/",
+    alt: "LinkedIn link logo",
+  },
 ];
 
 export const gridItems = [
