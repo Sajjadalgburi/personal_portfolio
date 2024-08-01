@@ -176,6 +176,35 @@ export const testimonials = [
   },
 ];
 
+export const myApproach = [
+  {
+    id: 1,
+    phase: "Phase 1",
+    title: "Discovery and Planning",
+    containerClassName: "bg-emerald-900",
+    desc: "In this phase, I understand the client's needs, define the project scope, identify key objectives, create a project plan, and ensure clear communication with stakeholders.",
+  },
+  {
+    id: 2,
+    phase: "Phase 2",
+    title: "Development and Implementation",
+    colors: [
+      [236, 72, 153],
+      [232, 121, 249],
+    ],
+    containerClassName: "bg-black",
+    desc: "I develop the project by designing the software architecture, writing clean code, conducting code reviews, integrating necessary services, and collaborating with the client for feedback.",
+  },
+  {
+    id: 3,
+    phase: "Phase 3",
+    title: "Testing and Deployment",
+    colors: [[125, 211, 252]],
+    containerClassName: "bg-sky-600",
+    desc: "I ensure the product is ready for release through thorough testing, fixing issues, preparing deployment plans, deploying the product, and providing post-deployment support.",
+  },
+];
+
 export const companies = [
   {
     id: 1,
