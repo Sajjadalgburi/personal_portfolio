@@ -3,6 +3,7 @@ import { Navbar } from "@/components/Navbar";
 import { About } from "@/components/About";
 import MyExperiance from "@/components/MyExperiance";
 import Testemonials from "@/components/Testemonials";
+import Approach from "@/components/Approach";
 
 export default function Home() {
   return (
@@ -17,7 +18,10 @@ export default function Home() {
         <MyExperiance />
         {/* $ */}
       </div>
-      <Testemonials />{" "}
+      <Testemonials />
+      <div className="max-w-7xl w-full">
+        <Approach />
+      </div>
     </main>
   );
 }
