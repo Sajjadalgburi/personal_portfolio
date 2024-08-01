@@ -3,7 +3,7 @@ import { testimonials } from "@/data";
 
 const Testemonials = () => {
   return (
-    <section id="testemonials" className="my-[10rem] min-w-full">
+    <section id="testimonials" className="my-[10rem] min-w-full">
       <h1 className="body_header mb-10">
         Testonomials from <span className="gradient_color">clients</span> and{" "}
         <span className="gradient_color">employees</span>
@@ -12,7 +12,7 @@ const Testemonials = () => {
         <InfiniteMovingCards
           items={testimonials}
           direction="left"
-          speed="normal"
+          speed="slow"
         />
       </div>
     </section>
