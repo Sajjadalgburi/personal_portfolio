@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { PinContainer } from "./ui/3d-pin";
 import { projects } from "@/data/index";
 import Image from "next/image";
@@ -8,9 +9,13 @@ const MyExperiance = () => {
       <h1 className="body_header">
         My work <span className="gradient_color">Experiance</span>
       </h1>
-      <h2 className="absolute text-[11rem] left-[32%] top-[40%] opacity-[0.08] font-extrabold bg-zinc-600 text-center p-3 capitalize ">
-        &quot;Experiance&quot;
-      </h2>
+
+      <div className="sm:flex hidden absolute left-[30%] top-[30%] ">
+        <h2 className="text-[11rem] opacity-[0.05] font-extrabold bg-zinc-600 text-center p-3 capitalize ">
+          &quot;Experiance&quot;
+        </h2>
+      </div>
+
       <div className="flex-wrap flex items-center justify-center gap-y-2 gap-x-10 relative">
         {projects.map((project) => (
           <div
