@@ -2,6 +2,7 @@ import React from "react";
 import SocialLinks from "./Socials";
 import { HoverBorderGradient } from "./ui/hover-border-gradient";
 import { footerData } from "@/data";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -20,7 +21,13 @@ const Footer = () => {
             {footerData.desc}
           </p>
 
-          <HoverBorderGradient>Learn More</HoverBorderGradient>
+          <Link
+            href={"https://www.linkedin.com/in/sajjadalgburi/"}
+            target="_blank"
+          >
+            <HoverBorderGradient>Learn More</HoverBorderGradient>
+          </Link>
+
           <div className="sm:flex-row flex-col gap-8 flex justify-between items-center w-full px-4 sm:mt-[12rem] mt-[3rem] mb-4">
             <p className="text-left text-xs font-medium">
               Copyright © 2024 Sajjad Alguri
