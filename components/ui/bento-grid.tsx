@@ -42,6 +42,9 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
+  const left = ["Next.js", "TypeScript", "React.js", " "];
+  const right = ["MongoDb", "Node.js", "Tailwind", " "];
+
   return (
     <div
       className={cn(
@@ -49,11 +52,6 @@ export const BentoGridItem = ({
         "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
         className
       )}
-      style={{
-        background: "rgb(25,25,25)",
-        backgroundColor:
-          "linear-gradient(90deg, rgba(24,24,24,0.7671860980720413) 0%, rgba(70,70,70,1) 100%)",
-      }}
     >
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         {/* Img Divs */}
@@ -92,15 +90,43 @@ export const BentoGridItem = ({
           )}
         >
           {/* desc */}
-          <div className="font-sans font-extralight z-10 text-neutral-600 lg:text-base md:text-xs text-sm dark:text-neutral-300 ">
+          <div
+            className={`${
+              id === 5 && " pr-[5rem] lg:pr-[20rem]"
+            } font-sans font-extralight z-10 text-neutral-600 lg:text-base md:text-xs text-sm dark:text-neutral-300 `}
+          >
             {description}
           </div>
           {/* title */}
-          <div className="font-sans text-lg lg:text-3xl max-w-96 z-10">
+          <div className="font-sans font-bold text-lg lg:text-2xl max-w-96 z-10">
             {title}
           </div>
 
           {id === 2 && <GridGlobe />}
+          {id === 3 && (
+            <div className="text-base sm:text-lg">
+              <ul className="gap-y-3 lg:gap-y-5 flex flex-col justify-end absolute left-[45%] top-3 ">
+                {left.map((item, i) => (
+                  <li
+                    className="bg-zinc-800 px-2 py-3 rounded-[.4rem] text-center"
+                    key={i}
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <ul className="gap-y-3 lg:gap-y-5 flex flex-col justify-end absolute left-[75%] top-0">
+                {right.map((item, i) => (
+                  <li
+                    className="bg-zinc-800 px-2 py-3 rounded-[.4rem] text-center"
+                    key={i}
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
           {/*  */}
         </div>
       </div>
