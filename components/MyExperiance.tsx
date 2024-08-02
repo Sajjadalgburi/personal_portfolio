@@ -16,22 +16,24 @@ const MyExperiance = () => {
         </h2>
       </div>
 
-      <div className="flex-wrap flex items-center justify-center gap-y-2 gap-x-10 relative">
+      <div className="flex-wrap flex items-center justify-center gap-y-5 xl:gap-y-10 lg:gap-x-[7rem] relative">
         {projects.map((project) => (
           <div
             key={project.id}
             className="sm:h-[41rem] h-[32rem] flex items-center justify-center sm:w-[540px] w-[100vw] "
           >
             <PinContainer title="visit" href={project.link || "/"}>
-              <div className="flex flex-col p-2 tracking-tight text-slate-100/50 sm:basis-1/2 w-[30rem] h-[30rem] ">
+              <div className="flex flex-col p-2 tracking-tight text-slate-100/50 sm:basis-1/2 w-[22rem] sm:w-[35rem] h-[30rem] ">
                 {/* Bg image */}
 
                 {/* <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" /> */}
 
-                <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
-                  <div className="relative w-full h-full overflow-hidden rounded-3xl opacity-40 transition-all hover:opacity-90">
-                    <img alt="Project Image" src={project.img} />
-                  </div>
+                <div className="relative w-full h-full overflow-hidden rounded-3xl opacity-40 transition-all hover:opacity-90">
+                  <img
+                    alt="Project Image"
+                    className=" object-contain, object-cover"
+                    src={project.img}
+                  />
                 </div>
 
                 {/* rest of the card content */}
