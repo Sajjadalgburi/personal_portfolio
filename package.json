@@ -9,6 +9,7 @@
     "lint": "next lint --max-warnings 0"
   },
   "dependencies": {
+    "@react-three/drei": "^9.109.2",
     "@react-three/fiber": "^8.16.8",
     "clsx": "^2.1.1",
     "framer-motion": "^11.3.21",
@@ -19,7 +20,8 @@
     "react-dom": "^18",
     "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7",
-    "three": "^0.167.1"
+    "three": "^0.167.1",
+    "three-globe": "^2.31.1"
   },
   "devDependencies": {
     "@types/node": "^20",
