@@ -30,7 +30,7 @@ const Footer = () => {
 
           <div className="sm:flex-row flex-col gap-8 flex justify-between items-center w-full px-4 sm:mt-[12rem] mt-[3rem] mb-4">
             <p className="text-left text-xs font-medium">
-              Copyright © 2024 Sajjad Alguri
+              Copyright © 2024 Sajjad Algburi
             </p>
             <SocialLinks />
           </div>
