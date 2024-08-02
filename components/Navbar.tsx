@@ -1,6 +1,6 @@
-import { navItems, socials } from "@/data";
+import { navItems } from "@/data";
 import Link from "next/link";
-import Image from "next/image";
+import SocialLinks from "./Socials";
 
 export function Navbar() {
   return (
@@ -12,23 +12,7 @@ export function Navbar() {
           </Link>
         ))}
         <p>|</p>
-        <div className="flex justify-center items-center gap-3">
-          {socials.map((social) => (
-            <Link
-              target="_blank"
-              key={social.id}
-              className=" bg-zinc-700 p-1 rounded-full"
-              href={social.href}
-            >
-              <Image
-                width={18}
-                height={18}
-                alt={social.alt}
-                src={social.logo}
-              />
-            </Link>
-          ))}
-        </div>
+        <SocialLinks />
       </div>
     </nav>
   );
