@@ -2,6 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { cn } from "@/lib/utils";
 import { BackgroundBeams } from "./background-beams";
+import { GridGlobe } from "../GirdGLobe";
 
 export const BentoGrid = ({
   className,
@@ -82,7 +83,6 @@ export const BentoGridItem = ({
         {/*  */}
 
         {/* Gradient bg for id of 6 */}
-
         {id === 6 && <BackgroundBeams />}
 
         <div
@@ -92,7 +92,7 @@ export const BentoGridItem = ({
           )}
         >
           {/* desc */}
-          <div className=" font-sans font-extralight z-10 text-neutral-600 lg:text-base md:text-xs text-sm dark:text-neutral-300 ">
+          <div className="font-sans font-extralight z-10 text-neutral-600 lg:text-base md:text-xs text-sm dark:text-neutral-300 ">
             {description}
           </div>
           {/* title */}
@@ -100,6 +100,7 @@ export const BentoGridItem = ({
             {title}
           </div>
 
+          {id === 2 && <GridGlobe />}
           {/*  */}
         </div>
       </div>
