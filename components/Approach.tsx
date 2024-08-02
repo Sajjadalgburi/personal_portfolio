@@ -19,6 +19,7 @@ const Approach = () => {
           >
             <CanvasRevealEffect
               animationSpeed={4}
+              colors={item.colors}
               containerClassName={item.containerClassName}
             />
           </Card>
