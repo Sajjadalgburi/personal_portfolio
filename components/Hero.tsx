@@ -47,9 +47,11 @@ const Hero = () => {
           </p>
         </a>
       </div>
-      <h3 className="absolute text-[7rem] left-[73%] top-[12%] opacity-[0.05] font-extrabold  text-center p-3 capitalize ">
-        &quot;Scroll&quot;
-      </h3>
+      <div className="sm:flex hidden absolute left-[60%] top-[34rem] lg:left-[71%] lg:top-[29rem]">
+        <h3 className="pointer-events-none text-[7rem] opacity-[0.05] font-extrabold text-center p-3 capitalize ">
+          &quot;Scroll&quot;
+        </h3>
+      </div>
     </section>
   );
 };
