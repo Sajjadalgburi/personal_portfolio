@@ -3,6 +3,8 @@
 import { cn } from "@/lib/utils";
 import { BackgroundBeams } from "./background-beams";
 import { GridGlobe } from "../GirdGLobe";
+import { HoverBorderGradient } from "./hover-border-gradient";
+import Link from "next/link";
 
 export const BentoGrid = ({
   className,
@@ -103,6 +105,15 @@ export const BentoGridItem = ({
           </div>
 
           {id === 2 && <GridGlobe />}
+          {id === 6 && (
+            <div className=" flex justify-center items-center mt-4">
+              <Link href="mailto:dfgsajjad@gmail.com">
+                <HoverBorderGradient className="text-xs">
+                  Email Me
+                </HoverBorderGradient>
+              </Link>
+            </div>
+          )}
           {id === 3 && (
             <div className="text-base sm:text-lg">
               <ul className="gap-y-3 lg:gap-y-5 flex flex-col justify-end absolute left-[45%] top-3 ">
