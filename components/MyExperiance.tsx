@@ -29,11 +29,7 @@ const MyExperiance = () => {
                 {/* <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" /> */}
 
                 <div className="relative w-full h-full overflow-hidden rounded-3xl opacity-40 transition-all hover:opacity-90">
-                  <img
-                    alt="Project Image"
-                    className=" object-contain, object-cover"
-                    src={project.img}
-                  />
+                  <img alt="Project Image" src={project.img} />
                 </div>
 
                 {/* rest of the card content */}
