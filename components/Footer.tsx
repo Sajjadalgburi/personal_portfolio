@@ -25,7 +25,9 @@ const Footer = () => {
             href={"https://www.linkedin.com/in/sajjadalgburi/"}
             target="_blank"
           >
-            <HoverBorderGradient>Learn More</HoverBorderGradient>
+            <HoverBorderGradient className=" capitalize">
+              Learn More About me
+            </HoverBorderGradient>
           </Link>
 
           <div className="sm:flex-row flex-col gap-8 flex justify-between items-center w-full px-4 sm:mt-[12rem] mt-[3rem] mb-4">
