@@ -22,7 +22,7 @@ const Footer = () => {
           </p>
 
           <Link
-            href={"https://www.linkedin.com/in/sajjadalgburi/"}
+            href="https://docs.google.com/document/d/18ySfM4Db26B9PCVPvKZI5ISMoRCcCt7BLqKDb1_F9HY/edit?usp=sharing"
             target="_blank"
           >
             <HoverBorderGradient className=" capitalize">
