@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { PinContainer } from "./ui/3d-pin";
 import { projects } from "@/data/index";
-import Image from "next/image";
 
 const MyExperiance = () => {
   return (
@@ -50,7 +49,7 @@ const MyExperiance = () => {
                         key={icon}
                         className="flex justify-center items-center rounded-full bg-black-300 p-3"
                       >
-                        <Image
+                        <img
                           src={icon}
                           width={15}
                           height={15}
