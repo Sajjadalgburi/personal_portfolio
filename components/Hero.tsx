@@ -1,10 +1,8 @@
 import { Spotlight } from "./ui/Spotlight";
-import { FlipWords } from "./ui/flip-words";
-import { HoverBorderGradient } from "./ui/hover-border-gradient";
+import { BgText } from "./BgText";
+import HeroSectionText from "./HeroSectionText";
 
 const Hero = () => {
-  const words = ["software engineer", "fullstack developer"];
-
   return (
     <section className="pb-20 pt-36">
       <div>
@@ -17,41 +15,8 @@ const Hero = () => {
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_4%,black)]"></div>
       </div>
 
-      <div className="flex justify-center relative my-20 z-10">
-        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Dynamic Web Magic with Next.js
-          </p>
-
-          <div className="my-5">
-            <h1 className="hero_header capitalize">
-              Hey, I am Sajjad Algburi, a <br /> <FlipWords words={words} />
-              located in Canada
-            </h1>
-          </div>
-          <p className="text-center text-[.7rem] sm:text-[1.2rem] leading-relaxed text-blue-100">
-            I craft dynamic and responsive websites using modern web
-            technologies to deliver seamless digital experiences.
-          </p>
-
-          <a href="#about" className="mt-10">
-            <HoverBorderGradient>Learn More</HoverBorderGradient>
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex justify-end">
-        <a href="#experiance">
-          <p className="text-[4px] sm:text-[8px] uppercase text-blue-100">
-            Scroll Down ↓
-          </p>
-        </a>
-      </div>
-      <div className="sm:flex hidden absolute left-[60%] top-[34rem] lg:left-[71%] lg:top-[29rem]">
-        <h2 className="pointer-events-none text-[7rem] opacity-[0.05] font-extrabold text-center p-3 capitalize ">
-          &quot;Scroll&quot;
-        </h2>
-      </div>
+      <HeroSectionText />
+      <BgText />
     </section>
   );
 };
