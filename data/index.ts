@@ -3,7 +3,7 @@ export const navItems = [
   { name: "Experiance", link: "#experiance" },
   {
     name: "Resume",
-    link: "https://docs.google.com/document/d/18ySfM4Db26B9PCVPvKZI5ISMoRCcCt7BLqKDb1_F9HY/edit?usp=sharing",
+    link: "https://teal-charlot-41.tiiny.site/",
     target: "_blank",
   },
   { name: "Testimonials", link: "#testimonials" },
