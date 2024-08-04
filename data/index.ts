@@ -210,5 +210,5 @@ export const myApproach = [
 
 export const footerData = {
   title: "Want to get to know me better?",
-  desc: "Please feel free to contact me anytime via my email dfgsajjad@gmail.com or reach out to me through my socials below.",
+  desc: "Please feel free to contact me anytime via my email sajjadalgburi.dev@gmail.com or reach out to me through my socials below.",
 };

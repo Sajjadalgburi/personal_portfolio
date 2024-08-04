@@ -107,7 +107,7 @@ export const BentoGridItem = ({
           {id === 2 && <GridGlobe />}
           {id === 6 && (
             <div className=" flex justify-center items-center mt-4">
-              <Link href="mailto:dfgsajjad@gmail.com">
+              <Link href="mailto:sajjadalgburi.dev@gmail.com">
                 <HoverBorderGradient className="text-xs">
                   Email Me
                 </HoverBorderGradient>
