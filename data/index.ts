@@ -125,7 +125,7 @@ export const projects = [
     des: "Brothers Exterior stands as a cherished privately owned family business, passionately dedicated to delivering unparalleled house stucco services across the Greater Toronto Area (GTA).",
     img: "/BNO.jpg",
     role: "Full-Stack Dev",
-    iconLists: ["/re.svg", "/tail.svg", "/js.svg", "/aws.svg", "/mongodb.svg"],
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/mongodb.svg"],
     link: "https://www.bnostucco.com/",
   },
 ];
