@@ -15,7 +15,7 @@ const Hero = () => {
             Dynamic Web Magic with Next.js
           </p>
 
-          <h1 className="text-normal sm:text-3xl md:text-5xl font-bold leading-tight">
+          <h1 className="text-xl sm:text-2xl md:text-5xl font-bold leading-tight">
             Hey, I am Sajjad Algburi, a <br className="hidden sm:block" />
             <FlipWords words={words} /> located in Canada
           </h1>
@@ -39,8 +39,8 @@ const Hero = () => {
         <div className="flex-shrink-0">
           <img
             alt="Me Picture"
-            src="/me_pic.jpg"
-            className="w-[150px] md:w-[400px] h-auto rounded-xl shadow-xl"
+            src="/me_pic_flower.jpg"
+            className="w-[250px] sm:w-[350px] lg:w-[500px] h-auto rounded-xl shadow-xl"
           />
         </div>
       </div>
