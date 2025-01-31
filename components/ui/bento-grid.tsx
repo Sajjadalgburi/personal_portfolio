@@ -110,7 +110,7 @@ export const BentoGridItem = ({
               <ul className="gap-y-3 lg:gap-y-5 flex flex-col justify-end absolute left-[45%] top-3 ">
                 {left.map((item, i) => (
                   <li
-                    className="bg-zinc-300 text-sm sm:text-base px-2 py-3 rounded-[.4rem] text-center"
+                    className="bg-white-200 text-sm sm:text-base px-2 py-3 rounded-[.4rem] text-center"
                     key={i}
                   >
                     {item}
@@ -120,7 +120,7 @@ export const BentoGridItem = ({
               <ul className="gap-y-3 lg:gap-y-5 flex flex-col justify-end absolute left-[75%] top-0">
                 {right.map((item, i) => (
                   <li
-                    className="bg-zinc-300 text-sm sm:text-base px-2 py-3 rounded-[.4rem] text-center"
+                    className="bg-white-200 text-sm sm:text-base px-2 py-3 rounded-[.4rem] text-center"
                     key={i}
                   >
                     {item}

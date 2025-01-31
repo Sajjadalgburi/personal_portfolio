@@ -9,7 +9,7 @@ export default function SocialLinks() {
         <Link
           target="_blank"
           key={social.id}
-          className="p-1 rounded-xl hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+          className="p-1 rounded-xl hover:bg-blue-200 dark:hover:bg-blue-700 transition-colors"
           href={social.href}
         >
           <img width={25} height={25} alt={social.alt} src={social.logo} />

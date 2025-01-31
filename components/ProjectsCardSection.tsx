@@ -17,7 +17,7 @@ const ProjectsCardSection = () => {
             title="Visit Project"
             href={project.link || "/"}
           >
-            <div className="flex flex-col p-4 bg-gray-300 rounded-3xl shadow-lg transition-transform transform hover:scale-105 w-[22rem] sm:w-[35rem] h-[25rem] sm:h-[30rem] overflow-hidden">
+            <div className="flex flex-col p-4 bg-white dark:bg-gray-100 rounded-3xl shadow-lg transition-transform transform hover:scale-105 w-[22rem] sm:w-[35rem] h-[25rem] sm:h-[30rem] overflow-hidden">
               {/* Background Image */}
               <div className="relative w-full h-1/2 md:h-3/5 overflow-hidden rounded-2xl">
                 <Image
@@ -31,16 +31,16 @@ const ProjectsCardSection = () => {
 
               {/* Project Info */}
               <div className="mt-4 px-2">
-                <h3 className="text-xl font-semibold text-white">
+                <h3 className="text-xl font-semibold text-gray-800">
                   {project.title}
                 </h3>
-                <p className="text-sm text-blue-400 uppercase">
+                <p className="text-sm text-gray-600 uppercase">
                   {project.role}
                 </p>
               </div>
 
               {/* Description */}
-              <p className="px-2 text-sm text-gray-400 mt-2 line-clamp-3">
+              <p className="px-2 text-sm text-gray-600 mt-2 line-clamp-3">
                 {project.des}
               </p>
 
