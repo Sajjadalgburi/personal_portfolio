@@ -1,6 +1,4 @@
 import React from "react";
-import SocialLinks from "./Socials";
-import { HoverBorderGradient } from "./ui/hover-border-gradient";
 import { footerData } from "@/data";
 import Link from "next/link";
 import { Button } from "./ui/button";
@@ -17,12 +15,17 @@ const Footer = () => {
 
       <div className="relative">
         <div className="flex flex-col items-center justify-center gap-10">
-          <h1 className="md:text-7xl text-4xl">{footerData.title}</h1>
-          <p className="text-base text-center max-w-4xl font-extralight w-full tracking-wider capitalize">
+          <h1 className="md:text-7xl text-4xl text-center">
+            {footerData.title}
+          </h1>
+          <p className="sm:text-base text-xs text-center max-w-4xl font-extralight w-full tracking-wider capitalize">
             {footerData.desc}
           </p>
 
-          <Button size={"lg"}>
+          <Button
+            size={"lg"}
+            className="bg-white-200 text-sm sm:text-base md:text-lg"
+          >
             <Link href="https://teal-charlot-41.tiiny.site/" target="_blank">
               Learn More About me
             </Link>

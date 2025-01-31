@@ -11,10 +11,15 @@ const ProjectsCardSection = () => {
           key={project.id}
           className="flex items-center justify-center w-full sm:w-[540px] h-auto"
         >
-          <Link title="Visit Project" href={project.link || "/"}>
-            <div className="flex flex-col p-4 bg-gray-300 rounded-3xl shadow-lg transition-transform transform hover:scale-105 w-[22rem] sm:w-[35rem] h-[30rem] overflow-hidden">
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Visit Project"
+            href={project.link || "/"}
+          >
+            <div className="flex flex-col p-4 bg-gray-300 rounded-3xl shadow-lg transition-transform transform hover:scale-105 w-[22rem] sm:w-[35rem] h-[25rem] sm:h-[30rem] overflow-hidden">
               {/* Background Image */}
-              <div className="relative w-full md:h-3/5 overflow-hidden rounded-2xl">
+              <div className="relative w-full h-1/2 md:h-3/5 overflow-hidden rounded-2xl">
                 <Image
                   fill={true}
                   alt="Project Image"

@@ -3,7 +3,6 @@ import { Navbar } from "@/components/Navbar";
 import { About } from "@/components/About";
 import MyExperiance from "@/components/MyExperiance";
 import Testemonials from "@/components/Testemonials";
-import Approach from "@/components/Approach";
 import Footer from "@/components/Footer";
 
 export default function Home() {
