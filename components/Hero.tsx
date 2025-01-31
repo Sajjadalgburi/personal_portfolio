@@ -1,22 +1,50 @@
-import { Spotlight } from "./ui/Spotlight";
-import { BgText } from "./BgText";
-import HeroSectionText from "./HeroSectionText";
+/* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
+import { FlipWords } from "./ui/flip-words";
+import Image from "next/image";
+import { Button } from "./ui/button";
 
 const Hero = () => {
+  const words = ["software engineer", "fullstack developer"];
+
   return (
-    <section className="pb-20 pt-36">
-      <div>
-        <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen" />
-        <Spotlight className="top-10 left-full h-[80vh] w-[50vw]" />
-        <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" />
-      </div>
+    <section className=" sm:my-0 my-[4rem] xs:min-h-screen flex items-center justify-center px-4 sm:px-10">
+      <div className="flex flex-row items-center gap-10 w-full max-w-6xl mx-auto">
+        {/* Left Content */}
+        <div className="text-center lg:text-left flex flex-col gap-4">
+          <p className="uppercase tracking-widest text-[7px] sm:text-xs text-gray-500">
+            Dynamic Web Magic with Next.js
+          </p>
 
-      <div className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.04] bg-grid-black/[0.2] absolute top-0 left-0 flex items-center justify-center">
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_4%,black)]"></div>
-      </div>
+          <h1 className="text-sm sm:text-3xl md:text-5xl font-bold leading-tight">
+            Hey, I am Sajjad Algburi, a <br className="hidden sm:block" />
+            <FlipWords words={words} /> located in Canada
+          </h1>
 
-      <HeroSectionText />
-      <BgText />
+          <p className="text-xs hidden sm:flex sm:text-lg text-gray-700 leading-relaxed">
+            I craft dynamic and responsive websites using modern web
+            technologies to deliver seamless digital experiences.
+          </p>
+
+          <div className="sm:mt-2 flex justify-center">
+            <Button
+              className="bg-white-200 text-sm sm:text-base md:text-lg sm:w-[2rem] w-full"
+              asChild
+            >
+              <Link href="#about">Contact Me</Link>
+            </Button>
+          </div>
+        </div>
+
+        {/* Right Image */}
+        <div className="flex-shrink-0">
+          <img
+            alt="Me Picture"
+            src="/me_pic.jpg"
+            className="w-[190px] md:w-[400px] h-auto rounded-xl shadow-xl"
+          />
+        </div>
+      </div>
     </section>
   );
 };

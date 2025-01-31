@@ -34,8 +34,6 @@ export const socials = [
 export const gridItems = [
   {
     id: 1,
-    title: "Client Collaboration",
-    description: "Open communication for success.",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full object-cover object-center",
     titleClassName: "justify-end",

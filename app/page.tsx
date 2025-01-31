@@ -8,23 +8,13 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="relative bg-black-100 flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip">
-      <div className="max-w-7xl w-full">
-        <Navbar />
-        {/* $ */}
-        <Hero />
-        {/* $ */}
-        <About />
-        {/* $ */}
-        <MyExperiance />
-        {/* $ */}
-      </div>
+    <main className="bg-gray-100 h-full w-full dark:bg-gray-800 text-black dark:text-white">
+      <Navbar />
+      <Hero />
+      <About />
+      <MyExperiance />
       <Testemonials />
-      <div className="max-w-7xl w-full">
-        <Approach />
-        {/* $ */}
-        <Footer />
-      </div>
+      <Footer />
     </main>
   );
 }

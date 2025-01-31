@@ -5,6 +5,7 @@ import { BackgroundBeams } from "./background-beams";
 import { GridGlobe } from "../GirdGLobe";
 import { HoverBorderGradient } from "./hover-border-gradient";
 import Link from "next/link";
+import { Button } from "./button";
 
 export const BentoGrid = ({
   className,
@@ -50,8 +51,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        // remove p-4 rounded-3xl dark:bg-black dark:border-white/[0.2] bg-white  border border-transparent, add border border-white/[0.1] overflow-hidden relative
-        "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
+        "row-span-1 relative overflow-hidden bg-white rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
         className
       )}
     >
@@ -95,7 +95,7 @@ export const BentoGridItem = ({
           <div
             className={`${
               id === 5 && " pr-[5rem] lg:pr-[20rem]"
-            } font-sans font-extralight z-10 text-neutral-600 lg:text-base md:text-xs text-sm dark:text-neutral-300 `}
+            } font-sans font-extralight z-10 text-neutral-700 lg:text-base md:text-xs text-sm`}
           >
             {description}
           </div>
@@ -106,20 +106,16 @@ export const BentoGridItem = ({
 
           {id === 2 && <GridGlobe />}
           {id === 6 && (
-            <div className=" flex justify-center items-center mt-4">
-              <Link href="mailto:sajjadalgburi.dev@gmail.com">
-                <HoverBorderGradient className="text-xs">
-                  Email Me
-                </HoverBorderGradient>
-              </Link>
-            </div>
+            <Button className=" flex justify-center items-center mt-4">
+              <Link href="mailto:sajjadalgburi.dev@gmail.com">Email me</Link>
+            </Button>
           )}
           {id === 3 && (
             <div className="text-base sm:text-lg">
               <ul className="gap-y-3 lg:gap-y-5 flex flex-col justify-end absolute left-[45%] top-3 ">
                 {left.map((item, i) => (
                   <li
-                    className="bg-zinc-800 px-2 py-3 rounded-[.4rem] text-center"
+                    className="bg-zinc-700 px-2 py-3 rounded-[.4rem] text-center"
                     key={i}
                   >
                     {item}
@@ -129,7 +125,7 @@ export const BentoGridItem = ({
               <ul className="gap-y-3 lg:gap-y-5 flex flex-col justify-end absolute left-[75%] top-0">
                 {right.map((item, i) => (
                   <li
-                    className="bg-zinc-800 px-2 py-3 rounded-[.4rem] text-center"
+                    className="bg-zinc-700 px-2 py-3 rounded-[.4rem] text-center"
                     key={i}
                   >
                     {item}

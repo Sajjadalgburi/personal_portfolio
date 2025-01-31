@@ -9,17 +9,20 @@
     "lint": "next lint --max-warnings 0"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.1.1",
     "@react-three/drei": "^9.109.2",
     "@react-three/fiber": "^8.16.8",
     "@vercel/speed-insights": "^1.0.12",
+    "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^11.3.21",
+    "lucide-react": "^0.474.0",
     "mini-svg-data-uri": "^1.4.4",
-    "next": "14.2.5",
+    "next": "^14.2.23",
     "next-themes": "^0.3.0",
     "react": "^18",
     "react-dom": "^18",
-    "tailwind-merge": "^2.4.0",
+    "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7",
     "three": "^0.167.1",
     "three-globe": "^2.31.1"

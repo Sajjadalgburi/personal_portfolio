@@ -1,57 +1,69 @@
 /* eslint-disable @next/next/no-img-element */
-import { PinContainer } from "./ui/3d-pin";
+import Link from "next/link";
 import { projects } from "@/data/index";
+import Image from "next/image";
 
 const ProjectsCardSection = () => {
   return (
-    <div className="flex-wrap flex items-center justify-center gap-y-5 xl:gap-y-10 lg:gap-x-[7rem] relative">
+    <div className="flex flex-wrap items-center justify-center gap-8 xl:gap-12 relative">
       {projects.map((project) => (
         <div
           key={project.id}
-          className="sm:h-[41rem] h-[32rem] flex items-center justify-center sm:w-[540px] w-[100vw] "
+          className="flex items-center justify-center w-full sm:w-[540px] h-auto"
         >
-          <PinContainer title="visit" href={project.link || "/"}>
-            <div className="flex flex-col p-2 tracking-tight text-slate-100/50 sm:basis-1/2 w-[22rem] sm:w-[35rem] h-[30rem] ">
-              {/* Bg image */}
-
-              {/* <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" /> */}
-
-              <div className="relative w-full h-full overflow-hidden rounded-3xl opacity-40 transition-all hover:opacity-90">
-                <img alt="Project Image" src={project.img} />
+          <Link title="Visit Project" href={project.link || "/"}>
+            <div className="flex flex-col p-4 bg-gray-300 rounded-3xl shadow-lg transition-transform transform hover:scale-105 w-[22rem] sm:w-[35rem] h-[30rem] overflow-hidden">
+              {/* Background Image */}
+              <div className="relative w-full md:h-3/5 overflow-hidden rounded-2xl">
+                <Image
+                  fill={true}
+                  alt="Project Image"
+                  unoptimized={true}
+                  src={project.img}
+                  className="w-full h-full object-cover transition-opacity duration-300 hover:opacity-90"
+                />
               </div>
 
-              {/* rest of the card content */}
-              <div className="my-2 flex justify-between ">
-                <h3 className="font-bold text-xl text-[white]">
+              {/* Project Info */}
+              <div className="mt-4 px-2">
+                <h3 className="text-xl font-semibold text-white">
                   {project.title}
                 </h3>
-                <p className="card_para">{project.role}</p>
+                <p className="text-sm text-blue-400 uppercase">
+                  {project.role}
+                </p>
               </div>
 
-              {/* card desc */}
-              <p className="text-slate-500 text-sm mb-2">{project.des}</p>
+              {/* Description */}
+              <p className="px-2 text-sm text-gray-400 mt-2 line-clamp-3">
+                {project.des}
+              </p>
 
-              <div className="flex justify-between items-center">
+              {/* Tech Icons & Visit Link */}
+              <div className="flex justify-between items-center mt-auto px-2 pb-3">
                 <div className="flex gap-2">
-                  {project.iconLists.map((icon) => (
+                  {project.iconLists.map((icon, index) => (
                     <div
-                      key={icon}
-                      className="flex justify-center items-center rounded-full bg-black-300 p-3"
+                      key={index}
+                      className="flex justify-center items-center rounded-full bg-gray-800 p-2 shadow-md"
                     >
                       <img
                         src={icon}
-                        width={15}
-                        height={15}
+                        width={18}
+                        height={18}
                         alt="Technology Used"
+                        className="opacity-80 hover:opacity-100"
                       />
                     </div>
                   ))}
                 </div>
 
-                <p className="card_para text-blue-600 capitalize">Visit us.</p>
+                <p className="text-blue-500 font-medium transition-colors hover:text-blue-300 cursor-pointer">
+                  Visit Project →
+                </p>
               </div>
             </div>
-          </PinContainer>
+          </Link>
         </div>
       ))}
     </div>

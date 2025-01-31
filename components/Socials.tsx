@@ -9,10 +9,10 @@ export default function SocialLinks() {
         <Link
           target="_blank"
           key={social.id}
-          className=" bg-zinc-700 p-1 rounded-full"
+          className="p-1 rounded-xl hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
           href={social.href}
         >
-          <img width={18} height={18} alt={social.alt} src={social.logo} />
+          <img width={25} height={25} alt={social.alt} src={social.logo} />
         </Link>
       ))}
     </div>

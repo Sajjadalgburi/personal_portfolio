@@ -2,18 +2,15 @@ import ProjectsCardSection from "./ProjectsCardSection";
 
 const MyExperiance = () => {
   return (
-    <section id="experiance" className="mt-10 py-10">
+    <section
+      id="experiance"
+      className="min-h-screen py-20 bg-gray-100 dark:bg-gray-800 w-full max-w-7xl mx-auto"
+    >
       {/* $ */}
-      <h1 className="body_header">
-        My work <span className="gradient_color">Experiance</span>
+      <h1 className="text-4xl sm:text-7xl font-semibold text-center mb-9">
+        My work Experiance
       </h1>
-      {/* $ */}
-      <div className="sm:flex hidden absolute left-[30%] top-[30%] ">
-        <h2 className="text-[11rem] opacity-[0.05] font-extrabold bg-zinc-600 text-center p-3 capitalize ">
-          &quot;Experiance&quot;
-        </h2>
-      </div>
-      {/* $ */}
+
       <ProjectsCardSection />
     </section>
   );
