@@ -90,3 +90,7 @@
 .card_para {
   @apply text-sm capitalize;
 }
+
+.header_text {
+  @apply text-3xl sm:text-4xl md:text-5xl text-center font-extrabold leading-tight;
+}

@@ -15,7 +15,7 @@ const Hero = () => {
             Dynamic Web Magic with Next.js
           </p>
 
-          <h1 className="text-lg sm:text-3xl md:text-5xl font-bold leading-tight">
+          <h1 className="text-normal sm:text-3xl md:text-5xl font-bold leading-tight">
             Hey, I am Sajjad Algburi, a <br className="hidden sm:block" />
             <FlipWords words={words} /> located in Canada
           </h1>

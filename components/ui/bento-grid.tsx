@@ -1,9 +1,7 @@
 "use client";
 /* eslint-disable @next/next/no-img-element */
 import { cn } from "@/lib/utils";
-import { BackgroundBeams } from "./background-beams";
 import { GridGlobe } from "../GirdGLobe";
-import { HoverBorderGradient } from "./hover-border-gradient";
 import Link from "next/link";
 import { Button } from "./button";
 
@@ -82,9 +80,6 @@ export const BentoGridItem = ({
         </div>
         {/*  */}
 
-        {/* Gradient bg for id of 6 */}
-        {id === 6 && <BackgroundBeams />}
-
         <div
           className={cn(
             titleClassName,
@@ -115,7 +110,7 @@ export const BentoGridItem = ({
               <ul className="gap-y-3 lg:gap-y-5 flex flex-col justify-end absolute left-[45%] top-3 ">
                 {left.map((item, i) => (
                   <li
-                    className="bg-zinc-700 px-2 py-3 rounded-[.4rem] text-center"
+                    className="bg-zinc-300 text-sm sm:text-base px-2 py-3 rounded-[.4rem] text-center"
                     key={i}
                   >
                     {item}
@@ -125,7 +120,7 @@ export const BentoGridItem = ({
               <ul className="gap-y-3 lg:gap-y-5 flex flex-col justify-end absolute left-[75%] top-0">
                 {right.map((item, i) => (
                   <li
-                    className="bg-zinc-700 px-2 py-3 rounded-[.4rem] text-center"
+                    className="bg-zinc-300 text-sm sm:text-base px-2 py-3 rounded-[.4rem] text-center"
                     key={i}
                   >
                     {item}

@@ -15,9 +15,7 @@ const Footer = () => {
 
       <div className="relative">
         <div className="flex flex-col items-center justify-center gap-10">
-          <h1 className="md:text-7xl text-4xl text-center">
-            {footerData.title}
-          </h1>
+          <h1 className="header_text">{footerData.title}</h1>
           <p className="sm:text-base text-xs text-center max-w-4xl font-extralight w-full tracking-wider capitalize">
             {footerData.desc}
           </p>

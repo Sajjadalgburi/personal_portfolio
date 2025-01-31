@@ -3,7 +3,7 @@ import { gridItems } from "@/data";
 
 export function About() {
   return (
-    <section id="about" className="min-h-screen bg-gray-300 p-9">
+    <section id="about" className="lg:min-h-screen bg-gray-300 p-9">
       {" "}
       <BentoGrid className="w-full max-w-7xl mx-auto">
         {gridItems.map(

@@ -126,6 +126,21 @@ export const projects = [
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/mongodb.svg"],
     link: "https://www.bnostucco.com/",
   },
+  {
+    id: 4,
+    title: "Fitness AI",
+    des: "Personalized workout plans tailored to your fitness goals and preferences.",
+    img: "/yoga.jpg",
+    role: "Full-Stack Dev",
+    iconLists: [
+      "/next.svg",
+      "/OpenAI_Symbol_1.png",
+      "/tail.svg",
+      "/ts.svg",
+      "/supabase-logo-icon.svg",
+    ],
+    link: "https://fitness-ai-amber.vercel.app/",
+  },
 ];
 
 export const testimonials = [
