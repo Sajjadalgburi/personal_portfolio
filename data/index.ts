@@ -1,6 +1,6 @@
 export const navItems = [
   { name: "About", link: "#about" },
-  { name: "Experiance", link: "#experiance" },
+  { name: "Experience", link: "#experience" },
   {
     name: "Resume",
     link: "https://teal-charlot-41.tiiny.site/",

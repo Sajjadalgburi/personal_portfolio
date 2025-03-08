@@ -1,7 +1,7 @@
 import Hero from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
 import { About } from "@/components/About";
-import MyExperiance from "@/components/MyExperiance";
+import MyExperience from "@/components/MyExperiance";
 import Testemonials from "@/components/Testemonials";
 import Footer from "@/components/Footer";
 
@@ -11,7 +11,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
-      <MyExperiance />
+      <MyExperience />
       <Testemonials />
       <Footer />
     </main>

@@ -1,9 +1,9 @@
 import ProjectsCardSection from "./ProjectsCardSection";
 
-const MyExperiance = () => {
+const MyExperience = () => {
   return (
     <section
-      id="experiance"
+      id="experience"
       className="min-h-screen py-20 bg-gray-100 dark:bg-gray-300 w-full max-w-7xl mx-auto "
     >
       {/* $ */}
@@ -16,4 +16,4 @@ const MyExperiance = () => {
   );
 };
 
-export default MyExperiance;
+export default MyExperience;

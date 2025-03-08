@@ -2,7 +2,7 @@ export const BgText = () => {
   return (
     <>
       <div className="relative flex justify-end">
-        <a href="#experiance">
+        <a href="#experience">
           <p className="text-[4px] sm:text-[8px] uppercase text-blue-100">
             Scroll Down ↓
           </p>
