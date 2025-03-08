@@ -94,7 +94,52 @@ export const gridItems = [
 
 export const projects = [
   {
-    id: 1,
+    id: uuid(),
+    title: "Outreach AI",
+    des: "Craft the perfect outreach message using latest AI tools.",
+    img: "/A-robot.jpg",
+    role: "Software Engineer",
+    iconLists: [
+      "/supabase-logo-icon.svg",
+      "/next.svg",
+      "/OpenAI_Symbol_1.png",
+      "/tail.svg",
+      "/ts.svg",
+    ],
+    link: "https://www.outreachai.app/",
+  },
+  {
+    id: uuid(),
+    title: "Chef Mind AI",
+    des: "Upload a photo of your ingredients and let AI craft personalized recipes. Transform everyday ingredients into extraordinary dishes.",
+    img: "/baker_8841132.png",
+    role: "Software Engineer",
+    iconLists: [
+      "/ts.svg",
+      "/next.svg",
+      "/OpenAI_Symbol_1.png",
+      "/tail.svg",
+      "/supabase-logo-icon.svg",
+    ],
+    link: "https://www.chefmind.app/",
+  },
+  {
+    id: uuid(),
+    title: "Fitness AI",
+    des: "Personalized workout plans tailored to your fitness goals and preferences.",
+    img: "/yoga.jpg",
+    role: "Full-Stack Dev",
+    iconLists: [
+      "/next.svg",
+      "/OpenAI_Symbol_1.png",
+      "/tail.svg",
+      "/ts.svg",
+      "/supabase-logo-icon.svg",
+    ],
+    link: "https://fitness-ai-amber.vercel.app/",
+  },
+  {
+    id: uuid(),
     title: "Interlade",
     des: "Revolutionize the modern world and eliminate the need for paper Bills of Lading with Interlade!",
     img: "/t.jpg",
@@ -103,7 +148,7 @@ export const projects = [
     link: "https://www.interlade.com/",
   },
   {
-    id: 2,
+    id: uuid(),
     title: "Shad's Barbershop",
     des: "At Shad's Barbershop, we believe every haircut is a masterpiece. Our skilled barbers combine artistry with precision to craft the perfect look just for you.",
     img: "/photo.jpg",
@@ -118,28 +163,13 @@ export const projects = [
     link: "https://shads-barbershop.onrender.com/",
   },
   {
-    id: 3,
+    id: uuid(),
     title: "BNO Stucco",
     des: "Brothers Exterior stands as a cherished privately owned family business, passionately dedicated to delivering unparalleled house stucco services across the Greater Toronto Area (GTA).",
     img: "/BNO.jpg",
     role: "Full-Stack Dev",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/mongodb.svg"],
     link: "https://www.bnostucco.com/",
-  },
-  {
-    id: 4,
-    title: "Fitness AI",
-    des: "Personalized workout plans tailored to your fitness goals and preferences.",
-    img: "/yoga.jpg",
-    role: "Full-Stack Dev",
-    iconLists: [
-      "/next.svg",
-      "/OpenAI_Symbol_1.png",
-      "/tail.svg",
-      "/ts.svg",
-      "/supabase-logo-icon.svg",
-    ],
-    link: "https://fitness-ai-amber.vercel.app/",
   },
 ];
 
@@ -225,3 +255,6 @@ export const footerData = {
   title: "Want to get to know me better?",
   desc: "Please feel free to contact me anytime via my email sajjadalgburi.dev@gmail.com or reach out to me through my socials below.",
 };
+function uuid() {
+  return crypto.randomUUID();
+}
