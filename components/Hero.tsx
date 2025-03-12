@@ -30,7 +30,7 @@ const Hero = () => {
             technologies to deliver seamless digital experiences.
           </p>
 
-          <div className="mt-4 md:mt-6 flex justify-center md:justify-start items-center gap-4">
+          <div className="mt-4 md:mt-6 grid grid-cols-2 grid-flow-dense  sm:flex  justify-center md:justify-start items-center gap-4">
             <button className="btn btn-md capitalize btn-primary">
               <Link
                 href="https://www.linkedin.com/in/sajjadalgburi/"
