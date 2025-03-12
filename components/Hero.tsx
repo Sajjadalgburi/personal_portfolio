@@ -31,7 +31,7 @@ const Hero = () => {
           </p>
 
           <div className="mt-4 md:mt-6 flex justify-center md:justify-start items-center gap-4">
-            <button className="btn btn-md btn-primary">
+            <button className="btn btn-md capitalize btn-primary">
               <Link
                 href="https://www.linkedin.com/in/sajjadalgburi/"
                 target="_blank"
@@ -49,8 +49,13 @@ const Hero = () => {
                 Connect with me
               </Link>
             </button>
-            <button className="btn btn-md btn-outline">
-              <Link href="#about">View my work</Link>
+            <button className="btn btn-md capitalize btn-outline">
+              <Link href="#experience">View my work</Link>
+            </button>
+            <button className="btn btn-md capitalize btn-accent">
+              <Link href="https://teal-charlot-41.tiiny.site/" target="_blank">
+                my resume
+              </Link>
             </button>
           </div>
         </div>

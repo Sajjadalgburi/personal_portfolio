@@ -37,7 +37,7 @@ const ThemeSelector = ({ homePage = true }: { homePage?: boolean }) => {
   }
 
   return homePage ? (
-    <div className="dropdown dropdown-right dropdown-center text-base-content">
+    <div className="dropdown dropdown-bottom sm:dropdown-right dropdown-center text-base-content">
       <div
         tabIndex={0}
         role="button"
