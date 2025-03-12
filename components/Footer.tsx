@@ -7,23 +7,20 @@ const Footer = () => {
   return (
     <footer
       id="contact"
-      className="relative mb-[16rem] sm:mb-[20rem] pb-20 pt-36 h-96 bg-white dark:bg-gray-100"
+      className="relative mb-[16rem] sm:mb-[20rem] pb-20 pt-36 h-96 "
     >
-      <div className="h-screen w-full bg-gray-50 dark:bg-gray-200 absolute -top-[40%] left-0 flex items-center justify-center">
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-white dark:bg-gray-100 [mask-image:radial-gradient(ellipse_at_center,transparent_4%,black)]"></div>
+      <div className="h-screen w-full  absolute -top-[40%] left-0 flex items-center justify-center">
+        <div className="absolute pointer-events-none inset-0 flex items-center justify-center  [mask-image:radial-gradient(ellipse_at_center,transparent_4%,black)]"></div>
       </div>
 
       <div className="relative">
         <div className="flex flex-col items-center justify-center gap-10">
-          <h1 className="header_text text-gray-800">{footerData.title}</h1>
-          <p className="sm:text-base text-xs text-center max-w-4xl font-extralight w-full tracking-wider capitalize text-gray-600">
+          <h1 className="header_text ">{footerData.title}</h1>
+          <p className="sm:text-base text-xs text-center max-w-4xl font-extralight w-full tracking-wider capitalize ">
             {footerData.desc}
           </p>
 
-          <Button
-            size={"lg"}
-            className="bg-white-200 text-sm sm:text-base md:text-lg"
-          >
+          <Button size={"lg"} className=" text-sm sm:text-base md:text-lg">
             <Link href="https://teal-charlot-41.tiiny.site/" target="_blank">
               Learn More About me
             </Link>

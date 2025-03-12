@@ -7,11 +7,11 @@ const Hero = () => {
   const words = ["software engineer", "fullstack developer"];
 
   return (
-    <section className=" sm:my-0 my-[4rem] sm:min-h-screen flex items-center justify-center px-4 sm:px-10">
+    <section className="sm:my-0 my-[4rem] sm:min-h-screen flex items-center justify-center px-4 sm:px-10">
       <div className="flex flex-row items-center gap-10 w-full max-w-6xl mx-auto">
         {/* Left Content */}
         <div className="text-center lg:text-left flex flex-col gap-4">
-          <p className="uppercase tracking-widest text-[7px] sm:text-xs text-gray-500">
+          <p className="uppercase tracking-widest text-[7px] sm:text-xs">
             Dynamic Web Magic with Next.js
           </p>
 
@@ -20,16 +20,13 @@ const Hero = () => {
             <FlipWords words={words} /> located in Canada
           </h1>
 
-          <p className="text-xs hidden sm:flex sm:text-lg text-gray-700 leading-relaxed">
+          <p className="text-xs hidden sm:flex sm:text-lg  leading-relaxed">
             I craft dynamic and responsive websites using modern web
             technologies to deliver seamless digital experiences.
           </p>
 
           <div className="sm:mt-2 flex justify-center">
-            <Button
-              className="bg-white-200 text-sm sm:text-base md:text-lg"
-              asChild
-            >
+            <Button className=" text-sm sm:text-base md:text-lg" asChild>
               <Link href="#about">Contact Me</Link>
             </Button>
           </div>
