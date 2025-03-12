@@ -1,9 +1,10 @@
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 import { gridItems } from "@/data";
+import CustomSection from "./CustomSection";
 
-export function About() {
+export function AboutMe() {
   return (
-    <section id="about" className="lg:min-h-screen  p-9">
+    <CustomSection id="about" className="bg-base-200">
       {" "}
       <BentoGrid className="w-full max-w-7xl mx-auto">
         {gridItems.map((item) => (
@@ -14,6 +15,6 @@ export function About() {
           />
         ))}
       </BentoGrid>
-    </section>
+    </CustomSection>
   );
 }

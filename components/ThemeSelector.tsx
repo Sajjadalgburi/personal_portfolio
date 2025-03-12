@@ -41,7 +41,7 @@ const ThemeSelector = ({ homePage = true }: { homePage?: boolean }) => {
       <div
         tabIndex={0}
         role="button"
-        className="btn btn-sm md:btn-md btn-outline m-1 gap-1 normal-case"
+        className="btn btn-md btn-outline m-1 gap-1 normal-case"
       >
         <span>{currentTheme}</span>
         <ArrowDown className="h-4 w-4 sm:block hidden" />

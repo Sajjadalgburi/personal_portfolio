@@ -3,7 +3,6 @@
 import { cn } from "@/lib/utils";
 import { GridGlobe } from "../GirdGLobe";
 import Link from "next/link";
-import { Button } from "./button";
 
 export const BentoGrid = ({
   className,
@@ -15,7 +14,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto",
+        "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7  gap-4 lg:gap-8 mx-auto",
         className
       )}
     >
@@ -49,7 +48,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 relative overflow-hidden bg-white rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
+        "row-span-1 relative overflow-hidden mx-8 md:mx-2 bg-base-200 text-base-content rounded-3xl border border-base-300 group/bento hover:shadow-xl transition duration-300 shadow-md justify-between flex flex-col space-y-4",
         className
       )}
     >
@@ -64,6 +63,7 @@ export const BentoGridItem = ({
             />
           )}
         </div>
+
         <div
           className={`absolute right-0 -bottom-5 ${
             id === 5 && "w-full opacity-80"
@@ -83,34 +83,34 @@ export const BentoGridItem = ({
         <div
           className={cn(
             titleClassName,
-            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
+            "group-hover/bento:translate-x-2 transition duration-300 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
           )}
         >
           {/* desc */}
           <div
             className={`${
               id === 5 && " pr-[5rem] lg:pr-[20rem]"
-            } font-sans font-extralight z-10 text-neutral-700 lg:text-base md:text-xs text-sm`}
+            } font-sans font-extralight z-10 text-base-content/80 lg:text-base md:text-xs text-sm`}
           >
             {description}
           </div>
           {/* title */}
-          <div className="font-sans font-bold text-lg lg:text-2xl max-w-96 z-10">
+          <div className="font-sans font-bold text-lg lg:text-2xl max-w-96 z-10 text-base-content">
             {title}
           </div>
 
           {id === 2 && <GridGlobe />}
           {id === 6 && (
-            <Button className=" flex justify-center items-center mt-4">
+            <button className="btn btn-md btn-primary text-primary-content">
               <Link href="mailto:sajjadalgburi.dev@gmail.com">Email me</Link>
-            </Button>
+            </button>
           )}
           {id === 3 && (
             <div className="text-base sm:text-lg">
               <ul className="gap-y-3 lg:gap-y-5 flex flex-col justify-end absolute left-[45%] top-3 ">
                 {left.map((item, i) => (
                   <li
-                    className="bg-white-200 text-sm sm:text-base px-2 py-3 rounded-[.4rem] text-center"
+                    className="text-sm sm:text-base bg-secondary text-secondary-content px-2 py-3 rounded-md text-center"
                     key={i}
                   >
                     {item}
@@ -120,7 +120,7 @@ export const BentoGridItem = ({
               <ul className="gap-y-3 lg:gap-y-5 flex flex-col justify-end absolute left-[75%] top-0">
                 {right.map((item, i) => (
                   <li
-                    className="bg-white-200 text-sm sm:text-base px-2 py-3 rounded-[.4rem] text-center"
+                    className="text-sm sm:text-base bg-primary text-primary-content px-2 py-3 rounded-md text-center"
                     key={i}
                   >
                     {item}

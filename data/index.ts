@@ -107,6 +107,7 @@ export const projects = [
       "/ts.svg",
     ],
     link: "https://www.outreachai.app/",
+    github: "https://github.com/Sajjadalgburi/outreach-ai",
   },
   {
     id: uuid(),
@@ -122,6 +123,7 @@ export const projects = [
       "/supabase-logo-icon.svg",
     ],
     link: "https://www.chefmind.app/",
+    github: "https://github.com/Sajjadalgburi/Chef_Mind_AI",
   },
   {
     id: uuid(),
@@ -137,6 +139,7 @@ export const projects = [
       "/supabase-logo-icon.svg",
     ],
     link: "https://fitness-ai-amber.vercel.app/",
+    github: "https://github.com/Sajjadalgburi/Fitness-AI",
   },
   {
     id: uuid(),
@@ -149,7 +152,7 @@ export const projects = [
   },
   {
     id: uuid(),
-    title: "Shad's Barbershop",
+    title: "Freelance",
     des: "At Shad's Barbershop, we believe every haircut is a masterpiece. Our skilled barbers combine artistry with precision to craft the perfect look just for you.",
     img: "/photo.jpg",
     role: "Front-End Dev",
@@ -164,7 +167,7 @@ export const projects = [
   },
   {
     id: uuid(),
-    title: "BNO Stucco",
+    title: "Freelance",
     des: "Brothers Exterior stands as a cherished privately owned family business, passionately dedicated to delivering unparalleled house stucco services across the Greater Toronto Area (GTA).",
     img: "/BNO.jpg",
     role: "Full-Stack Dev",
