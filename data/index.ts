@@ -186,12 +186,19 @@ export const testimonials = [
   },
   {
     id: 2,
+    text: "Thanks to OutreachAI (outreachai.app), I can efficiently apply to numerous jobs with personalized applications. Their cover letter generator perfectly aligns job listings with my resume details, creating tailored cover letters every time. Not to mention, their outreach message feature which has helped me alot as well!. I highly recommend this tool. Special thanks to Sajjad Algburi, the impressive solo developer behind this game-changing app.",
+    name: "Jay Patel",
+    title: "OutreachAI User",
+    profileImg: "/jay.jpg",
+  },
+  {
+    id: 3,
     text: "I am incredibly grateful to Sajjad for the fantastic website he created for my company. He was always very polite and accommodating whenever I requested new features. He even went the extra mile by paying for my domain!",
     name: "Ali Mhaidi",
     title: "Freelance Client",
   },
   {
-    id: 3,
+    id: 4,
     text: "I appreciate Sajjad Alguir's help and craftsmanship! With the help of his website, I was able to acquire additional customers, many of whom returned because of the custom booking platform he created for me, all at no extra cost!",
     name: "Habeed Shad",
     title: "Freelance Client",
