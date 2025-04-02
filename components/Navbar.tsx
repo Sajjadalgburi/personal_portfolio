@@ -30,8 +30,7 @@ export function Navbar() {
         {navItems.map((item, key) => (
           <button
             key={key}
-            className="btn btn-ghost btn-md md:text-lg text-base font-normal"
-          >
+            className="btn btn-ghost btn-md md:text-lg text-base font-normal">
             <Link target={item.target} href={item.link}>
               {item.name}
             </Link>
@@ -41,14 +40,12 @@ export function Navbar() {
 
       <div
         className="md:hidden flex items-center justify-between w-full px-4 relative"
-        ref={menuRef}
-      >
+        ref={menuRef}>
         <ThemeSelector />
         <button
           className="btn btn-primary btn-md"
           onClick={() => setMobile(!mobile)}
-          aria-label="Toggle menu"
-        >
+          aria-label="Toggle menu">
           {mobile ? "Close" : "Menu"}
         </button>
 
@@ -61,8 +58,7 @@ export function Navbar() {
                   className="block px-4 py-2 hover:bg-base-200 transition-colors w-full text-left"
                   key={key}
                   href={item.link}
-                  onClick={() => setMobile(false)}
-                >
+                  onClick={() => setMobile(false)}>
                   {item.name}
                 </Link>
               ))}
