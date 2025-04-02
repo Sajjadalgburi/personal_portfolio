@@ -127,6 +127,22 @@ export const projects = [
   },
   {
     id: uuid(),
+    title: "Full-Stack Dev",
+    des: "Developed a full-stack news application with React.js that displays global trending news and integrates AI to analyze article bias and generate summaries.",
+    img: "/21601.png",
+    role: "Software Engineer",
+    iconLists: [
+      "/ts.svg",
+      "/re.svg",
+      "/OpenAI_Symbol_1.png",
+      "/nodejs-icon.svg",
+      "/mongodb.svg",
+    ],
+    link: "https://drive.google.com/file/d/1WX62CmU2zTO7L5pFUM452zN7G2CRMkPe/view",
+    github: "https://github.com/Sajjadalgburi/news-app",
+  },
+  {
+    id: uuid(),
     title: "Fitness AI",
     des: "Personalized workout plans tailored to your fitness goals and preferences.",
     img: "/yoga.jpg",
