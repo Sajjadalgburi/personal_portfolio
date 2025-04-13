@@ -3,8 +3,7 @@ export const navItems = [
   { name: "Experience", link: "#experience" },
   {
     name: "Resume",
-    link: "https://teal-charlot-41.tiiny.site/",
-    target: "_blank",
+    link: "/resume",
   },
   { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
@@ -127,6 +126,22 @@ export const projects = [
   },
   {
     id: uuid(),
+    title: "Interview Pal",
+    des: "Be interview-ready with AI-powered mock interviews. Practice coding, behavioral, and system design interviews with real-time feedback.",
+    img: "/robot.png",
+    role: "Full-Stack Dev",
+    iconLists: [
+      "/ts.svg",
+      "/firebase.svg",
+      "/next.svg",
+      "/OpenAI_Symbol_1.png",
+      "/tail.svg",
+    ],
+    link: "https://drive.google.com/file/d/1szn73VL_cuMHY3MirBCbhMf3JufhJhfg/view",
+    github: "https://github.com/Sajjadalgburi/interview_pal",
+  },
+  {
+    id: uuid(),
     title: "Full-Stack Dev",
     des: "Developed a full-stack news application with React.js that displays global trending news and integrates AI to analyze article bias and generate summaries.",
     img: "/21601.png",
@@ -186,8 +201,8 @@ export const projects = [
     title: "Freelance",
     des: "Brothers Exterior stands as a cherished privately owned family business, passionately dedicated to delivering unparalleled house stucco services across the Greater Toronto Area (GTA).",
     img: "/BNO.jpg",
-    role: "Full-Stack Dev",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/mongodb.svg"],
+    role: "Front-End Dev",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
     link: "https://www.bnostucco.com/",
   },
 ];

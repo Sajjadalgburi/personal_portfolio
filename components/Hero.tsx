@@ -51,9 +51,7 @@ const Hero = () => {
               <Link href="#experience">View my work</Link>
             </button>
             <button className="btn btn-md capitalize btn-accent">
-              <Link href="https://teal-charlot-41.tiiny.site/" target="_blank">
-                my resume
-              </Link>
+              <Link href="/resume">my resume</Link>
             </button>
           </div>
         </div>
